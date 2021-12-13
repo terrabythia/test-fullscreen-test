@@ -19,10 +19,19 @@ function App() {
           step="1"
           max="1000" 
           defaultValue={10} 
+          value={errorMargin}
           onChange={onErrorMarginChange} 
           id="fullScreenErrorMargin" 
         />
-        <span>{errorMargin}</span>
+        <input
+          type="number" 
+          step="1" 
+          max="1000" 
+          min="0" 
+          defaultValue={10} 
+          value={errorMargin}
+          onChange={onErrorMarginChange} 
+        />
       </div>
       </div>
       <div>
