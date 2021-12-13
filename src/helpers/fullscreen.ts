@@ -1,6 +1,6 @@
 export const isWindowFullScreen = (errorMargin: number = 0): boolean => (
-  Math.abs(window.screen.width - window.innerWidth) < errorMargin
-  && Math.abs(window.screen.height - window.innerHeight) < errorMargin
+  Math.abs(window.screen.width - window.outerWidth) < errorMargin
+  && Math.abs(window.screen.height - window.outerHeight) < errorMargin
 );
 
 export const isWindowFullScreenLegacy = (errorMargin: number = 0): boolean => {
